@@ -4,6 +4,8 @@ html
 	padding:0px;
 	box-sizing: border-box;
 	font-family: verdana, Arial, Helvetica, sans-serif;
+	/*text-align: center;*/
+	color:#F8F0F0;
 }
 *,*::before,*::after
 {
@@ -44,8 +46,30 @@ html
 	grid-column-end: 9;
 	background-color: #444941;
 	height:60px;
-
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+	overflow: hidden;
+	background-color:black;
 	}
+	ul
+	{
+		list-style-type: none;
+	}
+	li
+		{
+			float: left;
+		}
+		li a
+		{
+			display: block;
+			padding: 18px;
+			color:#FFFFFF;
+			text-decoration:none;
+		}
+		li a:hover{
+				background-color: #5F7A61;
+			}
 	#page-section
 	{
 	grid-column-start: 3;
@@ -66,3 +90,13 @@ height: 35px;
 		grid-column-end:3;
 		background-color: #5F7A61;
 	}
+	.page-element
+	{
+		list-style-type: none;
+			margin: 0;
+			padding:0;
+			overflow: hidden;
+			background-color:black;
+	}
+
+	
