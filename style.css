@@ -53,8 +53,8 @@ html
 }
 #logo
 {
-	height:50px;
-	width: 50px;
+	height:45px;
+	width: 45px;
 	/*border:1px solid red;*/
 	margin: 10px 40px 10px 10px;
 	padding-left: 10px;
@@ -76,11 +76,6 @@ li a
 }
 li a:hover{
 	background-color: #5F7A61;
-}
-li img:hover
-{
-			background-color: #5F7A61;
-
 }
 
 #page-section
