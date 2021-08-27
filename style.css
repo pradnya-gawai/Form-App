@@ -159,9 +159,17 @@ label { display:inline-block;
 }
 .form-ele
 {
-	/*border: 2px solid black;*/
+	border: 2px solid black;
 	margin:20px;
-
-
+}
+.my-btn
+{
+	height: 30px;
+	width: 60px;
+}
+#form-btn{
+display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
