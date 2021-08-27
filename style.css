@@ -20,6 +20,7 @@ html
 	/*display: flex;*/
 	/*height:700px*/
 
+
 	display: grid;
 	grid-template-columns:repeat(8,1fr);
 	/*grid-row-gap: 20px;		*/
@@ -37,7 +38,7 @@ html
 #page-header
 {   grid-column-start: 1;
 	grid-column-end: 9;
-	height: 35px;
+	display: none;
 	background-color: #444941;
 }
 #page-navigation{
@@ -78,16 +79,20 @@ li a
 	text-decoration:none;
 }
 li a:hover{
-	background-color: #5F7A61;
+	background-color: #e09326;
 }
 
 #page-section
 {
 	grid-column-start: 3;
 	grid-column-end: 9;
-	background-color:white;
+	/*background-repeat: none;*/
 	 /*#D5EEBB;*/
 	height:700px;
+	/*background-image: linear-gradient(to right, black,white);*/
+	background-color: white;
+
+
 }
 #page-footer
 {
@@ -100,7 +105,9 @@ li a:hover{
 {
 	grid-column-start:1;
 	grid-column-end:3;
-	background-color: #5F7A61;
+	background-color: #F8F8F8	;
+				/*background-image: linear-gradient(to right, black,white);*/
+
 }
 .page-element
 {
@@ -113,33 +120,46 @@ li a:hover{
 
 form
 {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	position: relative;
 	left:30px;
 	top:20px;
 	width:500px;
 	/*overflow: hidden;*/
 	/*display: flex;*/
+	/*background-color:#f7dbb2;*/
+	border: 1px solid transparent;
+	border-radius: 5px;
 }
 #form-name
 {
 	text-align: center;
+	color:black;
+	/*border:1px solid blue;*/
+	background-color:#e09326;
+	padding: 15px;
 }
 .reg-form
 {
 	display: flex;
 	justify-content: center;
 	margin: 10px;
+	/*border: 1px solid black;*/
+	overflow: hidden;
+	/*margin-bottom: 10px;*/
+
+	/*border-radius: 5px;*/
 }
 
 label { display:inline-block; 
 	width: 100px; 
+	color:black;
 
-	border:1px solid red;
+	/*border:1px solid red;*/
 }
 .form-ele
 {
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 	margin:20px;
 
 
