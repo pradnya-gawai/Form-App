@@ -9,28 +9,48 @@
 </head>
 <body>
 	<div class="container">
-		<header class="page-element"id="page-header">header </header>
+		<header class="page-element"id="page-header">
+			<ul>
+			<li><img  id="logo" src="solace-logo.jpg"></li>
+			</ul>
+
+		 </header>
 		<nav   class="page-element" id="page-navigation">
 			
 			<ul>
-				<li><img  id="logo" src="solace-logo.jpg"></li>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">About</a></li>
+				<!-- <li><img  id="logo" src="solace-logo.jpg"></li> -->
+				<li class="nav-item"><a href="#">Home</a></li>
+				<li class="nav-item"><a href="#">Services</a></li>
+				<li class="nav-item"><a href="#">Blog</a></li>
+				<li class="nav-item"><a href="#">News</a></li>
+				<li class="nav-item"><a href="#">Contact</a></li>
+				<li class="nav-item"><a href="#">About</a></li>
 			</ul></nav>
-			<aside class="page-element" id="page-sidebar">aisde </aside>
+			<aside class="page-element" id="page-sidebar">
+				<div class="sidenav">
+					<ul class="sidebar-menu">
+					<li><a href="#" class="sidebar-menu">Home</a></li>
+					<li><a href="#" class="sidebar-menu">Services</a></li>
+					<li><a href="#" class="sidebar-menu">Blog</a></li>
+
+					<li><a href="#" class="sidebar-menu">News</a></li>
+					<li><a href="#" class="sidebar-menu">Contact</a></li>
+					<li><a href="#" class="sidebar-menu">About</a></li>
+  					</ul>
+
+				</div>
+			 </aside>
 			<section class="page-element"id="page-section">
 				<div class="reg-form">
 					<form>
 						<div id="form-name"><h2> Registration Form</h2></div>
 						<!-- frist Nmae and last name -->
 						<div class="form-ele">
-						<label for="fname">First name:</label>
+						<label for="fname">First name</label>
 						<input type="text" id="fname" name="fname" required ><br>
 						</div>
 						<div class="form-ele">
-						<label for="lname">Last name:</label>
+						<label for="lname">Last name</label>
 						<input type="text" id="lname" name="lname" required><br>
 						</div>
 
@@ -73,17 +93,15 @@
 
 
 						<div class="form-ele" id="form-btn">
-						<input class=" my-btn" type="reset" id="reset" name="reset" value="Reset" > &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-
-
 						<input class="my-btn" type="submit" id="submit" value="Submit" >
-						</div>
+						&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+						<input class=" my-btn" type="reset" id="reset" name="reset" value="Reset" > </div>
 					</form>
 
 				</div>
 
 			</section>
-			<footer class="page-element" id="page-footer">footer </footer>
+			<footer class="page-element" id="page-footer"  style="text-align: center;">footer </footer>
 		</div>	
 	</body>
 	</html>
