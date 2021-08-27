@@ -7,22 +7,76 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div class="container">
+	<div class="container">
 		<header class="page-element"id="page-header">header </header>
 		<nav   class="page-element" id="page-navigation">
 			
-		<ul>
-			<li><img  id="logo" src="solace-logo.jpg"></li>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">News</a></li>
-			<li><a href="#">Contact</a></li>
-			<li><a href="#">About</a></li>
-		</ul></nav>
-		
+			<ul>
+				<li><img  id="logo" src="solace-logo.jpg"></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+			</ul></nav>
+			<aside class="page-element" id="page-sidebar">aisde </aside>
+			<section class="page-element"id="page-section">
+				<div class="reg-form">
+					<form>
+						<div id="form-name"><h2> Registration Form</h2></div>
+						<!-- frist Nmae and last name -->
+						<div class="form-ele">
+						<label for="fname">First name:</label>
+						<input type="text" id="fname" name="fname" required ><br>
+						<label for="lname">Last name:</label>
+						<input type="text" id="lname" name="lname" required><br></div>
 
-		<aside class="page-element" id="page-sidebar">aisde </aside>
-		<section class="page-element"id="page-section">section</section>
-		<footer class="page-element" id="page-footer">footer </footer>
-</div>	
-</body>
-</html>
+						<!-- Gender -->
+						<div class="form-ele"><label>Gender</label>
+						
+						<label for="Female" >Female</label>
+						<input type="radio" id="Female" name="Gender">
+						<label for="Male" >Male</label>
+						<input type="radio"  id="Man"name="Gender"><br></div>
+
+						<!-- date-of-brith -->
+						<div class="form-ele"><label for="DOB">DOB</label>
+						<input type="date" id="DOB" name="DOB" min="1947-01-01" max="2021-01-31" required=""><br></div>
+
+						<!-- country -->
+
+						<div class="form-ele"><label for="country">Country</label>
+						<input list="country-list" name=" country" id="country">
+						<datalist id="country-list">
+							<option value="India"></option>
+							<option value="USA"></option>
+							<option value="UAE"></option>
+							<option value="Rest-of-world"></option>
+						</datalist><br></div>
+						<!-- email -->
+						<div class="form-ele"> <label for="Email"> Email-Id</label>
+						<input type="email" name="email" id="Email" required placeholder="abc@example.com"><br></div>
+
+						<!-- contact number -->
+						<div class="form-ele"><label for="tel"> Contact</label>
+						<input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br></div>
+
+						<!-- ask your query -->
+						
+						<div class="form-ele">
+							<textarea id="Question" name="question" style="width: 200px">ask your query</textarea><br>
+						</div>
+
+
+						<div class="form-ele">
+						<input type="reset" id="reset" name="reset">
+						<input type="submit" value="submit" >
+						</div>
+					</form>
+
+				</div>
+
+			</section>
+			<footer class="page-element" id="page-footer">footer </footer>
+		</div>	
+	</body>
+	</html>
