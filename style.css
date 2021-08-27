@@ -159,17 +159,37 @@ label { display:inline-block;
 }
 .form-ele
 {
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 	margin:20px;
 }
+
 .my-btn
 {
 	height: 30px;
 	width: 60px;
+	border:1px solid black;
 }
-#form-btn{
-display: flex;
+#form-btn,#my-textarea{
+display:flex;
   justify-content: center;
   align-items: center;
 
 }
+#submit
+{
+margin-right: 30px;	
+}
+.my-btn {
+  padding:5px;
+  /*font-size: 24px;*/
+  text-align: center;
+  cursor: pointer;
+  /*outline: none;*/
+  /*color: #fff;*/
+  background-color:#F8F8F8;
+  border: none;
+  border-radius: 5px;
+  /*box-shadow: 0 9px #999;*/
+}
+
+.my-btn:hover {background-color: #e09326;}
