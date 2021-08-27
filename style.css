@@ -50,6 +50,9 @@ html
 	padding:0;
 	overflow: hidden;
 	background-color:black;
+	/*position: fixed;*/
+	/*top:0px;*/
+	/*width: 100%;*/
 }
 #logo
 {
@@ -82,8 +85,9 @@ li a:hover{
 {
 	grid-column-start: 3;
 	grid-column-end: 9;
-	background-color: #D5EEBB;
-	height:500px;
+	background-color:white;
+	 /*#D5EEBB;*/
+	height:700px;
 }
 #page-footer
 {
@@ -107,3 +111,37 @@ li a:hover{
 	background-color:black;
 }
 
+form
+{
+	border: 1px solid black;
+	position: relative;
+	left:30px;
+	top:20px;
+	width:500px;
+	/*overflow: hidden;*/
+	/*display: flex;*/
+}
+#form-name
+{
+	text-align: center;
+}
+.reg-form
+{
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+label { display:inline-block; 
+	width: 100px; 
+
+	border:1px solid red;
+}
+.form-ele
+{
+	border: 2px solid black;
+	margin:20px;
+
+
+
+}
