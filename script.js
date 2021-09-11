@@ -1,7 +1,5 @@
  console.log("Connected to js file");
-// function saveData(event)
-
-// {
+// function saveData(event) {
 // 	event.preventDefault();
 // 	//event.preventDefault();
 // 	// let fname,lname,gender,DOB,country,email,contact,query;
@@ -25,17 +23,14 @@
 // 	// localStorage.setItem("contact",contact);
 // 	// localStorage.setItem("query",query);
 // 	//document.querySelectorAll('input').value;
-// 	 var obj=Array.from(document.querySelectorAll('input')).reduce((acc,input)=>({
-// 	 	...acc,[input.id] :input.value}),
-// 	 {});
-// 	 console.log(obj);
-
-
-
-// }
+	 var obj=Array.from(document.querySelectorAll('input')).reduce((acc,input)=>({
+	 	...acc,[input.id] :input.value}),
+	 {});
+	 console.log(obj);
+ // }
 let personData = [];
-        const addPerson = (ev)=>{
-            ev.preventDefault();  //to stop the form submitting
+        const addPerson = (event)=>{
+            event.preventDefault();  //to stop the form submitting
             let person = {
                 date: Date(),
                 fristName: document.getElementById('fname').value,
@@ -51,7 +46,7 @@ let personData = [];
             personData.push(person);
             //document.forms[0].reset();
              // to clear the form for the next entries
-            //document.querySelector('form').reset();
+           // document.querySelector('form').reset();
 
             console.log(personData)
 
@@ -61,3 +56,12 @@ let personData = [];
         document.addEventListener('DOMContentLoaded', ()=>{
             document.getElementById('submit').addEventListener('click', addPerson);
         });
+      const ackg =(event)=>{
+
+
+      	alert('Form Submitted!')
+document.getElementById('reg-form-input').reset();
+
+  }
+        	      // HTMLFormElement.reset()
+
