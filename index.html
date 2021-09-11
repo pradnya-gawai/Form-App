@@ -48,7 +48,7 @@
 			 		<!-- page section -->
 			<section class="page-element"id="page-section">
 				<div class="reg-form">
-					<form>
+					<form id="reg-form-input">
 						<div id="form-name"><h2> Registration Form</h2></div>
 						<!-- frist Nmae and last name -->
 						<div class="form-ele">
@@ -61,11 +61,11 @@
 						</div>
 
 						<!-- Gender -->
-						<div class="form-ele"><label>Gender</label>
-						<input type="radio" id="Female" name="Gender">
+						<div class="form-ele"><label for="grnder">Gender</label>
+						<input type="radio" id="grnder" name="Gender">
 
 						<label for="Female" >Female</label>
-						<input type="radio"  id="Man"name="Gender">
+						<input type="radio" id="gender" name="Gender">
 
 						<label for="Male" >Male</label><br></div>
 
@@ -99,9 +99,9 @@
 
 
 						<div class="form-ele" id="form-btn">
-						<input class="my-btn" type="submit" id="submit" value="Submit" >
+						<button class="my-btn" type="submit" id="submit" value="Submit">Submit</button>  
 						&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-						<input class=" my-btn" type="reset" id="reset" name="reset" value="Reset" > </div>
+						<input class=" my-btn" type="reset" id="reset" name="reset"> </div>
 					</form>
 
 				</div>
@@ -116,5 +116,6 @@
 				<a href="#" class="fa fa-skype"></a>
 			</footer>
 		</div>	
+		<script src="script.js"></script>
 	</body>
 	</html>
