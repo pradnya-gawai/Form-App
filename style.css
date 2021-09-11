@@ -160,6 +160,7 @@ form
 	/*margin-bottom: 10px;*/
 
 	/*border-radius: 5px;*/
+	background-color: #faefe1;
 }
 
 label { display:inline-block; 
@@ -222,7 +223,7 @@ width: 100%;
   font-size: 10px;
   width:30px;
   height: 30px;
-  /*text-align: center;*/
+  text-align: center;
   text-decoration: none;
 
   border-radius:20%;
@@ -261,5 +262,3 @@ width: 100%;
   background: #00aff0;
   color: white;
 }
-
-
