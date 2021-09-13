@@ -53,30 +53,31 @@
 						<!-- frist Nmae and last name -->
 						<div class="form-ele">
 						<label for="fname">First name</label>
-						<input type="text" id="fname" name="fname" required ><br>
+						<input type="text" id="fname" name="fname" class="form-input" required><br>
 						</div>
 						<div class="form-ele">
 						<label for="lname">Last name</label>
-						<input type="text" id="lname" name="lname" required><br>
+						<input type="text" id="lname" name="lname" class="form-input" required><br>
 						</div>
 
 						<!-- Gender -->
-						<div class="form-ele"><label for="grnder">Gender</label>
-						<input type="radio" id="grnder" name="Gender">
+						<div class="form-ele"><label for="grnder" >Gender</label>
+						<input type="radio" id="grnder" name="Gender" value="Female" class="form-input">
 
 						<label for="Female" >Female</label>
-						<input type="radio" id="gender" name="Gender">
+						<input type="radio" id="gender" name="Gender" value="Male"
+						class="form-input">
 
 						<label for="Male" >Male</label><br></div>
 
 						<!-- date-of-brith -->
 						<div class="form-ele"><label for="DOB">DOB</label>
-						<input type="date" id="DOB" name="DOB" min="1947-01-01" max="2021-01-31" required=""><br></div>
+						<input type="date" id="DOB" name="DOB" min="1947-01-01" max="2021-01-31"  class="form-input" required><br></div>
 
 						<!-- country -->
 
 						<div class="form-ele"><label for="country">Country</label>
-						<input list="country-list" name=" country" id="country">
+						<input list="country-list" name=" country" id="country" class="form-input">
 						<datalist id="country-list">
 							<option value="India"></option>
 							<option value="USA"></option>
@@ -85,23 +86,24 @@
 						</datalist><br></div>
 						<!-- email -->
 						<div class="form-ele"> <label for="Email"> Email-Id</label>
-						<input type="email" name="email" id="Email" required placeholder="abc@example.com"><br></div>
+						<input type="email" name="email" id="Email"  placeholder="abc@example.com" class="form-input" required><br></div>
 
 						<!-- contact number -->
 						<div class="form-ele"><label for="tel"> Contact</label>
-						<input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br></div>
+						<input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-input" required><br></div>
 
 						<!-- ask your query -->
 						
 						<div class="form-ele" id="my-textarea">
-							<textarea id="Question" name="question" style="width:100%; height: 30px;" >Ask Your Query Here</textarea><br>
+							<textarea id="Question" name="question" style="width:100%; height: 30px;" class="form-input" placeholder="Ask Your Query Here" ></textarea><br>
 						</div>
-
+						<!-- form buttons -->
 
 						<div class="form-ele" id="form-btn">
-						<button class="my-btn" type="submit" id="submit" value="Submit">Submit</button>  
+						<button class="my-btn " type="submit" id="submit" value="Submit" >Submit</button>  
 						&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-						<input class=" my-btn" type="reset" id="reset" name="reset"> </div>
+						 <input class=" my-btn " type="reset" onclick="myReset()">	
+					</div> 
 					</form>
 
 				</div>
