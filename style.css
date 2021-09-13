@@ -19,8 +19,6 @@ html
 	border:1px solid black;
 	/*display: flex;*/
 	/*height:700px*/
-
-
 	display: grid;
 	grid-template-columns:repeat(8,1fr);
 	/*grid-row-gap: 20px;		*/
@@ -42,22 +40,31 @@ html
 	background-color:#000000;
 	height:70px;
 	margin-bottom: 5px;
+	position:sticky;
+
 
 }
 #page-navigation{
 	grid-column-start: 1;
 	grid-column-end: 9;
-	background-color: #787878;
+	/*background-color: #787878;*/
 	height:40px;
 	list-style-type: none;
 	margin: 0;
 	padding-bottom: 5px;
 	overflow: hidden;
 	background-color:black;
-	/*position: fixed;*/
 	/*top:0px;*/
 	/*width: 100%;*/
 }
+.sidebar-menu
+{
+display: block;
+padding:20px;
+width: 100%;
+
+}
+
 #logo
 {
 	height:45px;
@@ -116,7 +123,7 @@ li a:hover{
 	margin-top:5px;
 	overflow: hidden;
 	/*color:black;*/
-				/*background-image: linear-gradient(to right, black,white);*/
+	/*background-image: linear-gradient(to right, black,white);*/
 
 }
 .page-element
@@ -134,11 +141,8 @@ form
 	position: relative;
 	left:30px;
 	top:20px;
-	width:600px;
-	/*overflow: hidden;*/
-	/*display: flex;*/
-	/*background-color:#f7dbb2;*/
-	/*border: 1px solid black;*/
+	width:auto;
+	/*background-color:#fcf7e3;*/
 	border-radius: 5px;
 	height: inherit;
 }
@@ -146,7 +150,6 @@ form
 {
 	text-align: center;
 	color:black;
-	/*border:1px solid blue;*/
 	background-color:#e09326;
 	padding: 15px;
 }
@@ -155,24 +158,26 @@ form
 	display: flex;
 	justify-content: center;
 	margin: 10px;
-	/*border: 1px solid black;*/
 	overflow: hidden;
 	/*margin-bottom: 10px;*/
-
+	/*border: 1px solid black;*/
 	/*border-radius: 5px;*/
-	background-color: #faefe1;
+	/*background-color: #faefe1;*/
 }
 
 label { display:inline-block; 
 	width: 100px; 
 	color:black;
-
-	/*border:1px solid red;*/
 }
 .form-ele
 {
-	/*border: 2px solid black;*/
 	margin:20px;
+}
+.form-input{
+	border-radius:4px;
+	font-size:15px;
+	/*font-weight: bold;*/
+	border:0.5px solid black;
 }
 
 .my-btn
@@ -185,7 +190,6 @@ label { display:inline-block;
 display:flex;
   justify-content: center;
   align-items: center;
-
 }
 #submit
 {
@@ -193,31 +197,13 @@ margin-right: 30px;
 }
 .my-btn {
   padding:5px;
-  /*font-size: 24px;*/
   text-align: center;
   cursor: pointer;
-  /*outline: none;*/
-  /*color: #fff;*/
   background-color:#F8F8F8;
   border: none;
   border-radius: 5px;
-  /*box-shadow: 0 9px #999;*/
 }
-
 .my-btn:hover {background-color: #e09326;}
-
- 
-{
-border:1 px solid red;
-}
-
-.sidebar-menu
-{
-display: block;
-padding:20px;
-width: 100%;
-
-}
 .fa {
   padding:5px;
   font-size: 10px;
